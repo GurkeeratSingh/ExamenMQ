@@ -26,9 +26,9 @@ public class JSonService {
         @Path("/tenertodos")
         @Produces(MediaType.APPLICATION_JSON)
         public List<Users> getList() {
-            List<Users> a = new ArrayList<Users>();
-            a= etackemonManager.getInstance().listUsers();//Falla al obtener la instancia
-            return a;
+            List<Users> lista = new ArrayList<Users>();
+            lista= etackemonManager.getInstance().listUsers();//Falla al obtener la instancia
+            return lista;
         }
         @POST
         @Path("/addUser")
